@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APP Assignment</title>
+    <link rel="stylesheet" href="static/app.css">
+</head>
+<body>
+    <div class="container">
+        <header><!-- Header--> 
+            <a name="top-section"></a>
+            <h3 class="logo active">Application of Programming Principles</h3>
+            <div class="toggle active"></div>
+            <div class="navigation active">
+                    <!-- navbar links -->
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about-section">About</a></li>
+                            <li><a href="#calculator-section">Calculator</a></li>
+                            <li><a href="#thoughts-section">Thoughts</a></li>
+                            <li><a href="#journal-section">Journal</a></li>
+                        </ul> 
+                    <div class="intro">
+                        <p>Learn more and start today</p>
+                    </div>
+            </div>
+        </header>
+
+        <section class="home">
+            <!-- About Section -->
+            <div class="home-content">
+                <div class="about">
+                    <a name="about-section"></a>
+                    <h3 >About APP</h3>
+                    <p>Key features of the assignment</p>
+                    <div>
+                        <p class="head">Calculator</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <div>
+                    <p class="head">Journal</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <div >
+                    <p class="head">Design</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <div>
+                    <p class="head">Thoughts</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                </div>
+
+                <!-- Calculator Section -->
+                <div class="calculator">
+                    <a name="calculator-section"></a>
+                    <h3>Calculator</h3>
+                    <p>The one who runs the sums</p>
+                    <div>
+                        <h3>Add</h3>
+                        <input type="number" id="add1" class="input"/> + <input type="number" id="add2" class="input"/> = <input type="text" id="inputAdd" class="input"/>
+                        <p><button class="buttons" id="btnAdd">Add</button></p>
+                        <p><button class="buttons" id="btnAddAPI">Add via API</button></p>
+                    </div>
+                    <div >
+                        <h3>Subtract</h3>
+                        <input type="number" id="sub1" class="input"/> - <input type="number" id="sub2" class="input"/> = <input type="text" id="inputSubtract" class="input"/>
+                        <p><button class="buttons" id="btnSubtract">Subtract</button></p>
+                        <p><button class="buttons" id="btnSubtractAPI"> Subtract via API</button></p>
+                    </div>
+                    <div >
+                        <h3>Multiply</h3>
+                        <input type="number" id="multi1" class="input"/> x <input type="number" id="multi2" class="input"/> = <input type="text" id="inputMultiply" class="input"/>
+                        <p><button class="buttons" id="btnMultiply">Multiply</button></p>
+                        <p><button class="buttons" id="btnMultiplyAPI">Multiply via API</button></p>
+                    </div>
+                    <div >
+                    <h3>Divide</h3>
+                        <input type="number" id="divi1" class="input"/> / <input type="number" id="divi2" class="input"/> = <input type="text" id="inputDivide" class="input"/>
+                        <p><button class="buttons" id="btnDivide">Divide</button></p>
+                        <p><button class="buttons" id="btnDivideAPI">Divide via API</button></p>
+                    </div>
+                </div>
+
+                <!--JSON - JavaScript Object Notation-->
+                <div class="json">
+                    <a name="thoughts-section"></a>
+                    <div class="heading">
+                        <h3>Thoughts</h3>
+                    </div>
+                    <div class="thoughts slide">
+                        <p id="display">
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Journal Section -->
+                <div class="journal">
+                    <a name="journal-section"></a>
+                    <div>
+                        <h3>Journal</h3>
+                        <p>What I've done</p>
+                        <div>
+                            <h3>Journal Entries</h3>
+                            <ol id="listEntries">
+                                <li>item 1</li>
+                                <li>item 2</li>
+                            </ol>
+                        <div>
+                            <button id="btnUploadJournal">upload journal</button>
+                        </div>
+                    </div>
+                    <div id="journalItem" class="wrapper select">
+                        <div class="title">
+                          <h3>Selected Entry</h3>
+                        </div>
+                        <div class="input-form">
+                          <div class="input-fields">
+                            <input type="text" id="idEntry" class="input id id-show" placeholder="ID">
+                            <input type="text" id="dateEntry" class="input date date-show" placeholder="Date">
+                            <input type="text" id="namEntry" class="input name name-show" placeholder="Name">
+                          </div>
+                          <div class="msg">
+                            <textarea placeholder="Notes" id="txtNote" class="notes"></textarea>
+                            <div id="btnDeleteEntry" class="btn">Delete</div>
+                          </div>
+                        </div>
+                    </div>
+                    <div id="addItem" class="wrapper add">
+                        <div class="title">
+                          <h3>Add Entry</h3>
+                        </div>
+                        <div class="input-form" id="addform">
+                          <div class="input-fields">
+                            <input  type="text" id="idAdd" class="input id add" placeholder="ID">
+                            <input type="text" id="dateAdd" class="input date add " placeholder="Date">
+                            <input type="text" id="nameAdd" class="input name add" placeholder="Name">
+                          </div>
+                          <div class="msg">
+                            <textarea placeholder="Notes" id="txtAdd" class="notes"></textarea>
+                            <div id="btnAddEntry" class="btn">Add</div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer -->
+                <footer>
+                    <a href="#">To the top</a>
+                </footer>
+            </div>
+
+        </section>        
+    </div>
+<script>
+    // JSON - JavaScript Object Notation
+
+    
+</script>    
+<script src="static/app.js"></script>
+</body>
+</html>

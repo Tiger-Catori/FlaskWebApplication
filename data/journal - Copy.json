@@ -1,0 +1,10 @@
+{"journals": [
+    {"id": "1", "name": "Speaking", "date": "2021-01-05", "note": "I am Talking"},
+
+    {"id": "2", "name": "Eating", "date": "2021-02-06", "note": "I am Eating"},
+
+    {"id": "3", "name": "Reading", "date": "2021-03-07", "note": "I am Reading"}, 
+
+    {"id": "4", "name": "Sleeping", "date": "2021-04-08", "note": "Time to rest."}
+    ]
+}
